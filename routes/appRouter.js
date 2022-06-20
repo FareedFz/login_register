@@ -1,7 +1,6 @@
 const express = require('express');
 const app     = express();
+const userController = require('../controller/userController')
 
-app.get('/log',(req,res)=>{
-    res.send("Hello welcome i am docker file");
-});
+app.get('/log',userController.getData)
 module.exports = app;
