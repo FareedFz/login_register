@@ -5,6 +5,6 @@ const router = require('./routes/appRouter');
 
 app.use('/user',router)
 app.listen(5206,()=>{
-    console.log("server running on  this  ports  5206");
+    console.log("server running on  this  port  5206");
     
 })
